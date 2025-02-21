@@ -24,6 +24,10 @@ export class AppointmentController {
             return res.status(500).json({ error: 'Internal server error' });
         }
     }
+    getTransofrmedAppointmentsNforce = async (appointmentIds: string[]) => {
+        const appointments = await this.appointmentService.getAppointmentsByIds(appointmentIds);
+        return this.appointmentService.transformAppointments(appointments);
+    }
 
     getAppointmentsByIds = async (appointmentIds: string[]) => {
         return this.appointmentService.getAppointmentsByIds(appointmentIds);

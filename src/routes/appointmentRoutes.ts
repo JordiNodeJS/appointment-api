@@ -1,8 +1,10 @@
 import { Router, Request, Response } from 'express';
 import { AppointmentController } from '../controllers/appointmentController';
+import { NforceController } from '../controllers/nforceController';
 
 const router = Router();
 const appointmentController = new AppointmentController();
+const nforceController = new NforceController();
 
 interface BatchAppointmentRequest {
     appointmentIds: string[];
@@ -10,6 +12,10 @@ interface BatchAppointmentRequest {
 
 router.post('/transformed', (req: Request, res: Response): void => {
     void appointmentController.getTransformedAppointments(req, res);
+});
+
+router.post('/nforce', (req: Request, res: Response): void => {
+    void nforceController.processNforceData(req, res);
 });
 
 router.post('/', (req: Request, res: Response): void => {
