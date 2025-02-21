@@ -1,9 +1,9 @@
-import express from 'express';
-import { Request, Response } from 'express-serve-static-core';
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { AppointmentService } from './services/appointmentService';
 import { pool } from './config/database';
+import appointmentRoutes from './routes/appointmentRoutes';
 
 dotenv.config();
 
@@ -12,6 +12,7 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+app.use('/api/appointments', appointmentRoutes);
 
 const appointmentService = new AppointmentService();
 
@@ -59,3 +60,5 @@ app.post('/appointments', async (req: Request, res: Response) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+export default app;

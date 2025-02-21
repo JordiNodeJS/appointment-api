@@ -1,5 +1,5 @@
 import { pool } from '../config/database';
-import { Appointment } from '../types/appointment';
+import { Appointment, TransformedAppointment } from '../types/appointment';
 
 export class AppointmentService {
     async getAppointmentsByIds(appointmentIds: string[]): Promise<Appointment[]> {
@@ -23,5 +23,32 @@ export class AppointmentService {
 
         const [rows] = await pool.execute(query, appointmentIds);
         return rows as Appointment[];
+    }
+
+    transformAppointments(appointments: Appointment[]): TransformedAppointment[] {
+        return appointments.map(appointment => ({
+            agent_id: 182,
+            input: {
+                instructions: {
+                    languageForCall: "spanish",
+                    idOptic: appointment.idOptic,
+                    opticName: appointment.opticName,
+                    appointmendId: appointment.appointmentId,
+                    appointmentDate: appointment.appointmentDateUnix * 1000, // Convert to milliseconds
+                    firstName: appointment.firstName,
+                    idCustomer: appointment.idCustomer,
+                    phoneNumber: appointment.phoneNumber,
+                    utms: {
+                        s: "source",
+                        utm_source: "nforce",
+                        utm_campaign: "utm_campaign",
+                        utm_content: "utm_content",
+                        utm_adgroup: "utm_adgroup",
+                        needs_financing: 0
+                    }
+                }
+            },
+            metadata: {}
+        }));
     }
 }
