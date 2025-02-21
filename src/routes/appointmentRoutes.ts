@@ -1,10 +1,12 @@
 import { Router, Request, Response } from 'express';
 import { AppointmentController } from '../controllers/appointmentController';
 import { NforceController } from '../controllers/nforceController';
+import { FakeNforceController } from '../controllers/fakeNforceController';
 
 const router = Router();
 const appointmentController = new AppointmentController();
 const nforceController = new NforceController();
+const fakeNforceController = new FakeNforceController();
 
 interface BatchAppointmentRequest {
     appointmentIds: string[];
@@ -16,6 +18,10 @@ router.post('/transformed', (req: Request, res: Response): void => {
 
 router.post('/nforce', (req: Request, res: Response): void => {
     void nforceController.processNforceData(req, res);
+});
+
+router.post('/fake-nforce', (req: Request, res: Response): void => {
+    void fakeNforceController.processNforceData(req, res);
 });
 
 router.post('/', (req: Request, res: Response): void => {
