@@ -8,7 +8,7 @@ export class AppointmentController {
         this.appointmentService = new AppointmentService();
     }
 
-    async getTransformedAppointments = async (req: Request, res: Response) => {
+    getTransformedAppointments = async (req: Request, res: Response) => {
         try {
             const { appointmentIds } = req.body;
             
@@ -19,9 +19,13 @@ export class AppointmentController {
             const appointments = await this.appointmentService.getAppointmentsByIds(appointmentIds);
             const transformedAppointments = this.appointmentService.transformAppointments(appointments);
             
-            res.json(transformedAppointments);
+            return res.json(transformedAppointments);
         } catch (error) {
-            res.status(500).json({ error: 'Internal server error' });
+            return res.status(500).json({ error: 'Internal server error' });
         }
+    }
+
+    getAppointmentsByIds = async (appointmentIds: string[]) => {
+        return this.appointmentService.getAppointmentsByIds(appointmentIds);
     }
 }
