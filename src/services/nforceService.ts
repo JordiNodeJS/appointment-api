@@ -50,17 +50,23 @@ export class NforceService {
             throw new Error('Appointments must be an array');
         }
 
+        const totalRequests = appointments.length;
         const results = [];
+        
+        console.log(`\n=== Starting Process ===`);
+        console.log(`Total calls to make: ${totalRequests}`);
         
         for (let i = 0; i < appointments.length; i++) {
             const appointment = appointments[i];
-            console.log('Processing appointment:', appointment.input.instructions.opticName);
+            const remainingCalls = totalRequests - i;
+            
+            console.log(`\n=== Request ${i + 1}/${totalRequests} ===`);
+            console.log(`Remaining calls: ${remainingCalls - 1}`);
+            console.log('Processing appointment:', appointment.input.instructions.opticName, 'customer:', appointment.input.instructions.firstName, 'appointmendId:', appointment.input.instructions.appointmendId);
             
             try {
-                // Agregar delay antes de procesar cada appointment (excepto el primero)
                 if (i > 0) {
-                    console.log(`Waiting ${this.DELAY_BETWEEN_REQUESTS/1000} seconds before next request...`);
-                    await new Promise(resolve => setTimeout(resolve, this.DELAY_BETWEEN_REQUESTS));
+                    await this.countdownTimer(this.DELAY_BETWEEN_REQUESTS);
                 }
 
                 if (!appointment || !appointment.input.instructions.appointmendId) {
@@ -80,7 +86,19 @@ export class NforceService {
             }
         }
         
+        console.log('\n=== Process Completed ===');
         return results;
+    }
+
+    private async countdownTimer(delay: number): Promise<void> {
+        const seconds = Math.floor(delay / 1000);
+        console.log(`\nStarting countdown for next call...`);
+        
+        for (let i = seconds; i > 0; i--) {
+            process.stdout.write(`\rTime until next call: ${i} seconds`);
+            await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+        console.log('\n');
     }
 
     private async makeRequest(appointment: any): Promise<any> {

@@ -31,7 +31,7 @@ export class FakeNforceService {
     private readonly apiUrl = 'https://fake-nforce.ai/api/threads/runs';
     private readonly token = 'fake_token';
     private readonly agentId = 999;
-    private readonly DELAY_BETWEEN_REQUESTS = 0; // No delay for fake service
+    private readonly DELAY_BETWEEN_REQUESTS = 10000; // 10 seconds delay for demo purposes
 
     async processAppointments(appointments: any[]): Promise<any[]> {
         if (!Array.isArray(appointments)) {
@@ -39,10 +39,27 @@ export class FakeNforceService {
             throw new Error('Appointments must be an array');
         }
 
+        const totalRequests = appointments.length;
         const results = [];
         
-        for (const appointment of appointments) {
+        console.log(`\n=== Starting Fake NForce Process ===`);
+        console.log(`Total calls to make: ${totalRequests}`);
+        
+        for (let i = 0; i < appointments.length; i++) {
+            const appointment = appointments[i];
+            const remainingCalls = totalRequests - i;
+            
+            console.log(`\n=== Request ${i + 1}/${totalRequests} ===`);
+            console.log(`Remaining calls: ${remainingCalls - 1}`);
+            console.log('Processing appointment:', appointment.input.instructions.opticName, 'customer:', appointment.input.instructions.firstName, 'appointmendId:', appointment.input.instructions.appointmendId);
+
+
+            
             try {
+                if (i > 0) {
+                    await this.countdownTimer(this.DELAY_BETWEEN_REQUESTS);
+                }
+
                 if (!appointment || !appointment.input?.instructions?.appointmendId) {
                     console.warn('Skipping invalid appointment:', appointment?.input?.instructions?.opticName);
                     results.push({ error: 'Invalid appointment data', appointment });
@@ -60,7 +77,19 @@ export class FakeNforceService {
             }
         }
         
+        console.log('\n=== Process Completed ===');
         return results;
+    }
+
+    private async countdownTimer(delay: number): Promise<void> {
+        const seconds = Math.floor(delay / 1000);
+        console.log(`\nStarting countdown for next fake call...`);
+        
+        for (let i = seconds; i > 0; i--) {
+            process.stdout.write(`\rTime until next call: ${i} seconds`);
+            await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+        console.log('\n');
     }
 
     private async makeRequest(appointment: any): Promise<any> {
