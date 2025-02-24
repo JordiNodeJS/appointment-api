@@ -29,9 +29,9 @@ interface NforcePayload {
 
 export class NforceService {
     private readonly apiUrl = 'https://nforce.ai/api/threads/runs';
-    private readonly token = 'oat_MTAyOA.ZUR5a2NnRTVvYlpPVnZhMXVuMDNUM1B1ZF9FdEFhOXd2bTkybFNUdTE1NzQ2NDQxNTk__';
+    private readonly token = 'oat_MTAyOA.ZUR5a2NnRTVvYlpPVnZhMXVuMDNUM1B1ZF9FdEFhOXd2bTkybFNUdTE1NzQ2NDQxNTk';
     private readonly agentId = 182;
-    private readonly DELAY_BETWEEN_REQUESTS = 120000; // 2 minutes in milliseconds
+    private readonly DELAY_BETWEEN_REQUESTS = 60000; // 2 minutes in milliseconds
 
     async processAppointments(appointments: any[]): Promise<any[]> {
         if (!Array.isArray(appointments)) {
@@ -74,7 +74,7 @@ export class NforceService {
 
     private async makeRequest(appointment: any): Promise<any> {
 
-        console.log('Making request to nforce with appointment:', appointment);
+        // console.log('Making request to nforce with appointment:', appointment);
         debugger;
         try {
             console.log('Processing appointment from makeRequest:', appointment.input.instructions.opticName);

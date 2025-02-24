@@ -1,0 +1,722 @@
+[
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "ca593a9a-a279-48c5-9ae0-7ca94cf1748f",
+        "opticName": "Centro Óptico Todovision",
+        "appointmendId": "04162e7c-83c1-4954-8de5-dcb3b66e0d92",
+        "appointmentDate": 1740477600000,
+        "firstName": "Cristina",
+        "idCustomer": "171c945d-9973-403a-b16e-3b438449ba22",
+        "phoneNumber": "+34630941500",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "0ad096f1-3b1d-4a79-9e35-c8778c7b9528",
+        "opticName": "Óptica Vista",
+        "appointmendId": "062f0319-fb25-4fa8-885e-4e984ddbb6ab",
+        "appointmentDate": 1740474000000,
+        "firstName": "Jesus",
+        "idCustomer": "33a7d7bd-5eef-4e0e-969f-c71fa005127c",
+        "phoneNumber": "+34625418958",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "7b2a62c8-cd55-4172-92d5-c748386386c4",
+        "opticName": "Óptica LaRonda",
+        "appointmendId": "071e6bfb-b53d-4173-83dd-33f457cafad9",
+        "appointmentDate": 1740474000000,
+        "firstName": "Mariano",
+        "idCustomer": "eeef364c-b3dd-406f-85da-84cebbbc621f",
+        "phoneNumber": "34669168569",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "02b07aa5-b159-46d7-bf6b-7d84647db471",
+        "opticName": "88 Gafas",
+        "appointmendId": "0a9f6846-8fcf-46aa-b27b-2e96403c06d1",
+        "appointmentDate": 1740477600000,
+        "firstName": "Ana Cabo",
+        "idCustomer": "29735013-0178-450f-938a-30b8a086b16e",
+        "phoneNumber": "+34616099367",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "2dc8bb70-ba76-4293-83b3-3406fb7aae0e",
+        "opticName": "Vistaoptica Albacete",
+        "appointmendId": "0ddce792-b188-4aa8-897e-e0979e32121c",
+        "appointmentDate": 1740477600000,
+        "firstName": "José María ",
+        "idCustomer": "f586459b-1373-4220-b284-7e4f2f099ed8",
+        "phoneNumber": "+34610348343",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "137c0fb5-4574-4927-82d0-014def2631e0",
+        "opticName": "Óptica Canovelles",
+        "appointmendId": "13d0365a-fcb5-43d2-a867-395e3486c401",
+        "appointmentDate": 1740475800000,
+        "firstName": "Montse",
+        "idCustomer": "f83ca76f-e2e8-4972-91b2-aa442ba37328",
+        "phoneNumber": "+34661714013",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "58954fc1-5856-4960-93e6-bd0a04492f0b",
+        "opticName": "Visiorama Alcarria",
+        "appointmendId": "142b140b-1273-447a-b97c-120d6eda6f97",
+        "appointmentDate": 1740477600000,
+        "firstName": "María De Los Angeles",
+        "idCustomer": "3ee32e62-7844-4f7b-91c4-f1e0b9d8398a",
+        "phoneNumber": "+34690996559",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "43bbd83c-281a-4d49-824f-280e9e00985d",
+        "opticName": "Boaóptica",
+        "appointmendId": "15c7afdc-bf3b-4add-bb8e-901db5e3e38a",
+        "appointmentDate": 1740477600000,
+        "firstName": "Jose",
+        "idCustomer": "51aec497-3209-458c-b569-e0d5730b27e6",
+        "phoneNumber": "34677555435",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "9e107ca4-5bf9-44d0-8b26-fdb223c9b49d",
+        "opticName": "Optica Mirel",
+        "appointmendId": "1cd43b81-b8e7-42ca-9f1a-4a258a3b0021",
+        "appointmentDate": 1740474000000,
+        "firstName": "Nuria",
+        "idCustomer": "633bb58b-37d8-4f83-af4e-52a1c30b73b5",
+        "phoneNumber": "+34678295297",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "86bc744d-e594-4976-9765-2ae70e60e3a0",
+        "opticName": "VISTAOPTICA Vilanova",
+        "appointmendId": "1eabb135-c5d1-4b54-90a4-20bfa15f093b",
+        "appointmentDate": 1740474000000,
+        "firstName": "Juan Jose Juzgado",
+        "idCustomer": "b31c1f4b-6b34-4319-bb64-9fdd1d6c0157",
+        "phoneNumber": "+34644876528",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "0a7ad362-0bb4-46cc-9d5a-90672b3934ad",
+        "opticName": "Óptica Carbonell",
+        "appointmendId": "26f91e31-706c-4605-aa0f-30a69811962f",
+        "appointmentDate": 1740477600000,
+        "firstName": "Francisco",
+        "idCustomer": "fb79a186-290c-4c36-bad1-db9dea4a51d3",
+        "phoneNumber": "+34672535185",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "fa9f0355-a409-4937-828e-8adc2d890304",
+        "opticName": "Muralla Òptica Sant Adrià de Besòs",
+        "appointmendId": "34d54b7d-b356-4a34-b8ee-8ff5f80aba30",
+        "appointmentDate": 1740477600000,
+        "firstName": "M Ángeles",
+        "idCustomer": "57ef2710-28cf-4f09-90ec-b39dc06bebd5",
+        "phoneNumber": "+34608941979",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "91d8f040-83f5-488c-b3c0-008ea8c91f6d",
+        "opticName": "Delicias Visual Casco Antiguo",
+        "appointmendId": "3ff0703f-701b-4a2b-a961-ec32b11727af",
+        "appointmentDate": 1740474000000,
+        "firstName": "Lead",
+        "idCustomer": "d9eb8c65-4b87-4db1-a6cb-b1cbcd2fe4f3",
+        "phoneNumber": "+34680859164",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "f5f23fb7-d0e8-4f7f-b750-8e840021a79f",
+        "opticName": "Óptica la Noria",
+        "appointmendId": "41e2dbaf-31b7-47ac-b097-ef2c90ad86db",
+        "appointmentDate": 1740477600000,
+        "firstName": "Marisa",
+        "idCustomer": "3c8d9a9e-b78b-431e-b214-be1d800fbf4d",
+        "phoneNumber": "+34646275025",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "b3aff7dc-d636-4c04-8ed1-ec0a7465b7c4",
+        "opticName": "Óptica Herrero",
+        "appointmendId": "4222e623-1a3a-4c15-80c9-9ecb80d72501",
+        "appointmentDate": 1740477600000,
+        "firstName": "Aida Rosa",
+        "idCustomer": "33643634-3661-3232-2d31-3162662d3462",
+        "phoneNumber": "+34623935598",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "05287691-2d0d-43d4-a9a4-8cda7ad068d0",
+        "opticName": "Óptica Nº 5 Alicante",
+        "appointmendId": "4b32a271-3719-4fdf-a371-36eb7db42d24",
+        "appointmentDate": 1740477600000,
+        "firstName": "Vicen",
+        "idCustomer": "e98795be-fe14-478b-8e43-368c4956fe07",
+        "phoneNumber": "34616235413",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "42a761f1-5ac5-4d3d-9fd3-aafc18b9539c",
+        "opticName": "Óptica Varela Visión",
+        "appointmendId": "52977f35-5768-4367-969b-99aee8e80876",
+        "appointmentDate": 1740474000000,
+        "firstName": "Israel",
+        "idCustomer": "f6dc4a6b-e6c6-4cc6-ad49-6a95f87600fb",
+        "phoneNumber": "+34630690786",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "23b54910-d5ef-4ea1-8745-6cce9d8e15d8",
+        "opticName": "Óptica Federópticos Prisma",
+        "appointmendId": "5dca6b1e-06be-41ac-837f-eb42a5b0e8e1",
+        "appointmentDate": 1740474000000,
+        "firstName": "ana",
+        "idCustomer": "ea6ebfec-67af-44a2-bc27-49ac059e3b86",
+        "phoneNumber": "+34635780696",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "14e8d4fc-4ed0-4749-81b4-0ec6bef534f3",
+        "opticName": "Óptica Unilent Virgilio Plaza de España",
+        "appointmendId": "6bfd4985-1a01-4f43-82e8-5614b7aab093",
+        "appointmentDate": 1740477600000,
+        "firstName": "Luis Nuñez",
+        "idCustomer": "a616cc72-e1f3-44d1-b937-09d6c3b2226d",
+        "phoneNumber": "+34613108502",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "1863df86-a317-4f86-b10e-bb9b5457dce8",
+        "opticName": "Sagra Visión",
+        "appointmendId": "718985ff-e867-4a58-bed9-9086411cfd9b",
+        "appointmentDate": 1740475800000,
+        "firstName": "Toñi",
+        "idCustomer": "051de86e-28a7-4f22-9c7f-784dd9809591",
+        "phoneNumber": "+34696304523",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "60276c30-dc68-41a5-a5a0-8da3f0e00aa8",
+        "opticName": "Cazorla Ópticos Linares",
+        "appointmendId": "7a101f93-e4c3-476f-a73f-432e559c5bbf",
+        "appointmentDate": 1740474000000,
+        "firstName": "Francisco",
+        "idCustomer": "911f3987-cef3-48bd-a5fd-2bcf24f27eb1",
+        "phoneNumber": "34629465400",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "f4afd808-df78-43ec-83dc-930080e3c83c",
+        "opticName": "Centro Optico Audiologico Torres",
+        "appointmendId": "9fdfa1c4-71cd-4f54-a187-e8d206f5af5a",
+        "appointmentDate": 1740474000000,
+        "firstName": "Edelmira",
+        "idCustomer": "b67b92e4-5fd7-4863-bc71-af1b1b36f895",
+        "phoneNumber": "+34641278437",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "ce694f3c-0099-450f-8efb-fa91e238bab4",
+        "opticName": "Óptica Cadarso",
+        "appointmendId": "ae469ac1-8add-4a5e-b561-7bd0ddd55883",
+        "appointmentDate": 1740477600000,
+        "firstName": "Jessy",
+        "idCustomer": "36643965-6439-3636-2d39-6364612d3437",
+        "phoneNumber": "+34643452633",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "ca65807f-b292-4e82-a4d5-e1607cec37f1",
+        "opticName": "Dolcevista",
+        "appointmendId": "b032d39d-0e56-4bf1-b51c-d6da42c62367",
+        "appointmentDate": 1740477600000,
+        "firstName": "Ana De",
+        "idCustomer": "37eb5dd6-e579-4254-b0aa-d9511777f786",
+        "phoneNumber": "+34636255804",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "8edf7f4c-7bbd-414d-83bb-c72f99e70607",
+        "opticName": "Centro Optométrico Especializado",
+        "appointmendId": "b686abf7-f25a-4956-aaab-736d35c9f705",
+        "appointmentDate": 1740474000000,
+        "firstName": "Mireya",
+        "idCustomer": "f2404217-108f-4003-b330-b8148910ec45",
+        "phoneNumber": "+34630504280",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "43bbd83c-281a-4d49-824f-280e9e00985d",
+        "opticName": "Boaóptica",
+        "appointmendId": "b7ff74ca-3276-4a0d-b0ed-372b7118692d",
+        "appointmentDate": 1740474000000,
+        "firstName": "Ligia",
+        "idCustomer": "b87017bb-ad5d-4665-ae75-fe4b0c918628",
+        "phoneNumber": "34691628036",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "6409926a-5742-4c1f-937a-f79ea4b52daf",
+        "opticName": "Óptica Mataró",
+        "appointmendId": "be4e9fb2-fa87-459a-b99d-8cf25e35ebcf",
+        "appointmentDate": 1740475800000,
+        "firstName": "Islandy León",
+        "idCustomer": "05b7e717-fb44-40c1-b29d-4c23490cbc85",
+        "phoneNumber": "+34654212828",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "8536f2a3-70c4-4903-81eb-3fce5eb6541a",
+        "opticName": "Salud Visión Extremeña",
+        "appointmendId": "c8101484-2acb-443a-b739-dc6865c41096",
+        "appointmentDate": 1740477600000,
+        "firstName": "Mariana",
+        "idCustomer": "520d6651-a168-49da-b44f-cf2dc8fb56fc",
+        "phoneNumber": "+34691354277",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "108b55a4-d14a-4a35-a79d-24ceba84d1b7",
+        "opticName": "Óptica Miraflores Málaga",
+        "appointmendId": "d8ebf40a-c572-40d7-8560-cc476d0c9083",
+        "appointmentDate": 1740474000000,
+        "firstName": "Eszter",
+        "idCustomer": "d1f87f86-2421-4000-a1d9-44f4fd13d104",
+        "phoneNumber": "+34650300912",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "agent_id": 182,
+    "input": {
+      "instructions": {
+        "languageForCall": "spanish",
+        "idOptic": "0637d0dc-3216-46e2-a724-5ac51146d250",
+        "opticName": "Mirarte Ópticos",
+        "appointmendId": "f4c5522c-f0c7-4fb6-b97c-4f7d8b2a86d2",
+        "appointmentDate": 1740474000000,
+        "firstName": "Ananda ",
+        "idCustomer": "5b450e75-d81d-4fd3-94a4-ead5174a8446",
+        "phoneNumber": "+34610607784",
+        "utms": {
+          "s": "source",
+          "utm_source": "nforce",
+          "utm_campaign": "utm_campaign",
+          "utm_content": "utm_content",
+          "utm_adgroup": "utm_adgroup",
+          "needs_financing": 0
+        }
+      }
+    },
+    "metadata": {}
+  }
+]
