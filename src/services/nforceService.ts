@@ -28,10 +28,21 @@ interface NforcePayload {
 }
 
 export class NforceService {
-    private readonly apiUrl = 'https://nforce.ai/api/threads/runs';
-    private readonly token = 'oat_MTAyOA.ZUR5a2NnRTVvYlpPVnZhMXVuMDNUM1B1ZF9FdEFhOXd2bTkybFNUdTE1NzQ2NDQxNTk';
-    private readonly agentId = 182;
-    private readonly DELAY_BETWEEN_REQUESTS = 60000; // 2 minutes in milliseconds
+    private readonly apiUrl: string;
+    private readonly token: string;
+    private readonly agentId: number;
+    private readonly DELAY_BETWEEN_REQUESTS: number;
+
+    constructor() {
+        if (!process.env.NFORCE_API_URL) throw new Error('NFORCE_API_URL is required');
+        if (!process.env.NFORCE_TOKEN) throw new Error('NFORCE_TOKEN is required');
+        if (!process.env.NFORCE_AGENT_ID) throw new Error('NFORCE_AGENT_ID is required');
+        
+        this.apiUrl = process.env.NFORCE_API_URL;
+        this.token = process.env.NFORCE_TOKEN;
+        this.agentId = Number(process.env.NFORCE_AGENT_ID);
+        this.DELAY_BETWEEN_REQUESTS = Number(process.env.NFORCE_DELAY_BETWEEN_REQUESTS || 60000);
+    }
 
     async processAppointments(appointments: any[]): Promise<any[]> {
         if (!Array.isArray(appointments)) {
