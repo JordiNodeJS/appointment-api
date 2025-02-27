@@ -61,12 +61,17 @@ export class NforceService {
             const remainingCalls = totalRequests - i;
             
             console.log(`\n=== Request ${i + 1}/${totalRequests} ===`);
+            console.log(`Processing appointment #${i + 1} in sequence`);
             console.log(`Remaining calls: ${remainingCalls - 1}`);
             console.log('Processing appointment:', appointment.input.instructions.opticName, 'customer:', appointment.input.instructions.firstName, 'appointmendId:', appointment.input.instructions.appointmendId);
             
             try {
+                // Add delay before each request except the first one
                 if (i > 0) {
+                    console.log(`Waiting before processing appointment #${i + 1} with ID: ${appointment.input.instructions.appointmendId}`);
                     await this.countdownTimer(this.DELAY_BETWEEN_REQUESTS);
+                } else {
+                    console.log(`Processing first appointment with ID: ${appointment.input.instructions.appointmendId}`);
                 }
 
                 if (!appointment || !appointment.input.instructions.appointmendId) {
@@ -76,12 +81,13 @@ export class NforceService {
                 }
 
                 const response = await this.makeRequest(appointment);
+                console.log(`Successfully processed appointment #${i + 1} with ID: ${appointment.input.instructions.appointmendId}`);
                 results.push(response || { error: 'No response received' });
             } catch (error) {
-                console.error(`Error processing appointment:`, error);
+                console.error(`Error processing appointment #${i + 1}:`, error);
                 results.push({ 
                     error: error instanceof Error ? error.message : 'Unknown error',
-                    appointmentId: appointment?.id
+                    appointmentId: appointment?.input?.instructions?.appointmendId || appointment?.id
                 });
             }
         }
