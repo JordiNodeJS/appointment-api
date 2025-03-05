@@ -20,9 +20,12 @@ export class AppointmentService {
             INNER JOIN test.optic op ON a.id_optic = op.id
             WHERE a.id IN (${placeholders})
         `;
-
         const [rows] = await pool.execute(query, appointmentIds);
-        return rows as Appointment[];
+        const appointments = rows as Appointment[];
+        
+        // Sort appointments based on the order of appointmentIds
+        const appointmentMap = new Map(appointments.map(appointment => [appointment.appointmentId, appointment]));
+        return appointmentIds.map(id => appointmentMap.get(id)).filter(Boolean) as Appointment[];
     }
 
     transformAppointments(appointments: Appointment[]): TransformedAppointment[] {
